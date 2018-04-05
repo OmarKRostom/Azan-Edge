@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="azan_methods">
+        <item>@string/method_1</item>
+        <item>@string/method_2</item>
+        <item>@string/method_3</item>
+        <item>@string/method_4</item>
+        <item>@string/method_5</item>
+        <item>@string/method_6</item>
+        <item>@string/method_7</item>
+        <item>@string/method_8</item>
+        <item>@string/method_9</item>
+        <item>@string/method_10</item>
+        <item>@string/method_11</item>
+        <item>@string/method_12</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PrayerTileView">
+        <attr name="prayerTileTitle" format="string" />
+        <attr name="prayerTileIcon" format="reference" />
+    </declare-styleable>
+</resources>

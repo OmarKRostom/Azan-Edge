@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_title">Azan Edge</string>
+    <string name="app_description">With Azan Edge, not a single prayer will be missed inshallah.
+        \n\nWe are interested to give you the most accurate times \nfor prays according to your location.
+        We appreciate if you can click on the gear icon on the left bottom then edit under azan edge to enable location.</string>
+
+    <string name="azan_method">Azan method</string>
+    <string name="twelve_hr">12 HR</string>
+    <string name="twenty_four_hr">24 HR</string>
+    <string name="method_updated_successfully">Method updated successfully !</string>
+    <string name="made_by_omar_rostom">Made by Omar Khairy Rostom</string>
+    <string name="version_number">v1.0</string>
+    <string name="please_allow_location">Please allow location from settings !</string>
+    <string name="location_updated_successfully">Location updated successfully !</string>
+    <string name="current_location">Current location</string>
+    <string name="time_format">Time format</string>
+    <string name="time_format_description">Choose between 12H or 24H</string>
+
+    <!-- Prayers -->
+    <string name="asr_prayer">Asr</string>
+    <string name="fajr_prayer">Fajr</string>
+    <string name="zuhr_prayer">Zuhr</string>
+    <string name="maghreb_prayer">Maghrib</string>
+    <string name="isha_prayer">Isha</string>
+    
+    <!-- Azan methods -->
+    <string name="method_1">University of Islamic Sciences, Karachi</string>
+    <string name="method_2">Islamic Society of North America</string>
+    <string name="method_3">Muslim World League</string>
+    <string name="method_4">Umm Al-Qura University, Makkah </string>
+    <string name="method_5">Egyptian General Authority of Survey</string>
+    <string name="method_6">Institute of Geophysics, University of Tehran</string>
+    <string name="method_7">Gulf Region</string>
+    <string name="method_8">Kuwait</string>
+    <string name="method_9">Qatar</string>
+    <string name="method_10">Majlis Ugama Islam Singapura, Singapore</string>
+    <string name="method_11">Union Organization islamic de France</string>
+    <string name="method_12">Diyanet İşleri Başkanlığı, Turkey</string>
+</resources>

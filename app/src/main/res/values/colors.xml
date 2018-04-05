@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3d3d3d</color>
+    <color name="colorPrimaryDark">#252525</color>
+    <color name="colorAccent">#3d3d3d</color>
+    <color name="drawer_background">#33FAFAFA</color>
+</resources>

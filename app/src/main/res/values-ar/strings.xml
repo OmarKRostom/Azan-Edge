@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_title">Azan Edge</string>
+    <string name="app_description">"مع اذان ايدج، لن تفوتك صلاة بإذن الله. "</string>
+    <string name="azan_method">طريقة احتساب الاذان</string>
+    <string name="twelve_hr">12 س</string>
+    <string name="twenty_four_hr">24 س</string>
+    <string name="method_updated_successfully">تم تحديث طريقة الاذان !</string>
+    <string name="made_by_omar_rostom">برمجة عمر خيري رستم</string>
+    <string name="version_number">الإصدار 1.0</string>
+    <string name="please_allow_location">برجاء تشغيل الموقع !</string>
+    <string name="location_updated_successfully">تم تحديث الموقع بنجاح !</string>
+    <string name="current_location">الموقع الحالي</string>
+    <string name="time_format">صيغة الوقت</string>
+    <string name="time_format_description">اختر ما بين 12 و 24 ساعه</string>
+    <string name="asr_prayer">العصر</string>
+    <string name="fajr_prayer">الفجر</string>
+    <string name="zuhr_prayer">الظهر</string>
+    <string name="maghreb_prayer">المغرب</string>
+    <string name="isha_prayer">العشاء</string>
+    <string name="method_1">جامعة العلوم الإسلامية بكراتشي</string>
+    <string name="method_2">المجتمع الإسلامي بشمال أمريكا</string>
+    <string name="method_3">رابطة العالم الإسلامي</string>
+    <string name="method_4">جامعة أم القرى بمكه المكرمة</string>
+    <string name="method_5">هيئة المساحه العامة المصرية</string>
+    <string name="method_6">معهد الجيولوجيا بطهران</string>
+    <string name="method_7">منطقة الخليج</string>
+    <string name="method_8">الكويت</string>
+    <string name="method_9">قطر</string>
+    <string name="method_10">المجلس الإسلامي بسنغافورة</string>
+    <string name="method_11">اتحاد المسلمين بفرنسا</string>
+    <string name="method_12">مديرية الشئون الدينية بتركيا</string>
+</resources>

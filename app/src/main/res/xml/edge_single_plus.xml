@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cocktail-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    previewImage="@drawable/app_preview"
+    label="@string/app_title"
+    description="@string/app_description"
+    cocktailWidth="550"
+    configure="com.omarkrostom.azanEdge.activities.SettingsActivity">
+</cocktail-provider>
