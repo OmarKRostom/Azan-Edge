@@ -8,8 +8,8 @@ android {
         applicationId "com.omarkrostom.azan_edge"
         minSdkVersion 23
         targetSdkVersion 27
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
     }
     buildTypes {
         release {
