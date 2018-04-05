@@ -10,7 +10,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_azan_edge_icon"
         android:label="@string/app_title"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_azan_edge_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
