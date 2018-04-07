@@ -48,9 +48,7 @@
 
 <h2>Hall of fame</h2>
 <ul>
-  <li>Ramy Tamer</li>
   <li>Hazem Hagrass</li>
+  <li>Ramy Tamer</li>
   <li>Ahmed Emad</li>
-  <li>Ahmed Magdy</li>
-  <li>Abdelrahman Elsaidy</li>
 </ul>
