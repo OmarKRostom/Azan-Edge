@@ -44,6 +44,9 @@
   <a href="http://apps.samsung.com/appquery/appDetail.as?appId=com.omarkrostom.azan_edge">
     <img width="200" src="https://resources.samsungdevelopers.com/@api/deki/files/1974/Galaxy_Apps_Badge_PNG.png?revision=1&size=bestfit" />
   </a>
+  <a href="https://play.google.com/store/apps/details?id=com.omarkrostom.azan_edge">
+    <img width="200" height="75" src="http://www.elmoreapps.com/wp-content/uploads/2013/04/GooglePlay.png" />
+  </a>
 </p>
 
 <h2>Hall of fame</h2>
