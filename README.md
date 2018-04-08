@@ -39,7 +39,7 @@
 </div>
 </p>
 
-<h2>Samsung app store link</h2>
+<h2>Available on</h2>
 <p align="center">
   <a href="http://apps.samsung.com/appquery/appDetail.as?appId=com.omarkrostom.azan_edge">
     <img width="200" src="https://resources.samsungdevelopers.com/@api/deki/files/1974/Galaxy_Apps_Badge_PNG.png?revision=1&size=bestfit" />
