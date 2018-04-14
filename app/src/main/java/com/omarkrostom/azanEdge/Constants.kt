@@ -20,7 +20,7 @@ object Constants {
     const val APP_LAT = "lat"
 
     const val DEFAULT_METHOD = "Egyptian General Authority of Survey"
-    const val DEFAULT_METHOD_INDEX = 2
+    const val DEFAULT_METHOD_INDEX = 4
 
     const val AZAN_METHOD = "azan_method"
     const val AZAN_METHOD_INDEX = "azan_method_index"
