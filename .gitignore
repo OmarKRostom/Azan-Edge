@@ -65,3 +65,5 @@ fastlane/readme.md
 \.idea/misc\.xml
 
 \.idea/
+
+app/release/
