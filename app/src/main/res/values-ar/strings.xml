@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_title">Azan Edge</string>
+    <string name="app_title">اذان ايدج</string>
     <string name="app_description">"مع اذان ايدج، لن تفوتك صلاة بإذن الله. "</string>
     <string name="azan_method">طريقة احتساب الاذان</string>
     <string name="twelve_hr">12 س</string>
     <string name="twenty_four_hr">24 س</string>
     <string name="method_updated_successfully">تم تحديث طريقة الاذان !</string>
     <string name="made_by_omar_rostom">برمجة عمر خيري رستم</string>
-    <string name="version_number">الإصدار 1.0</string>
+    <string name="version_number">الإصدار 2.0</string>
     <string name="please_allow_location">برجاء تشغيل الموقع !</string>
     <string name="location_updated_successfully">تم تحديث الموقع بنجاح !</string>
     <string name="current_location">الموقع الحالي</string>
@@ -30,4 +30,21 @@
     <string name="method_10">المجلس الإسلامي بسنغافورة</string>
     <string name="method_11">اتحاد المسلمين بفرنسا</string>
     <string name="method_12">مديرية الشئون الدينية بتركيا</string>
+    <string name="save">حفظ</string>
+    <string name="zuhr_manual_difference">فرق صلاة الظهر</string>
+    <string name="asr_manual_difference">فرق صلاة العصر</string>
+    <string name="maghreb_manual_difference">فرق صلاة المغرب</string>
+    <string name="isha_manual_difference">فرق صلاة العشاء</string>
+    <string name="fajr_manual_difference">فرق صلاة الفجر</string>
+    <string name="manual_time_adjustments">تغيير مواقيت الصلاة يدويا</string>
+    <string name="swipe_numbers_left_and_right_to_adjust">اسحب يمينا ويسارا للضبط</string>
+    <string name="samsung_edge_panel_support">دعم سامسونج إيدج</string>
+    <string name="samsung_edge_panel_message">إضغط هنا لمعرفة ما إذا كان جهازك يدعم سامسونج إيدج</string>
+    <string name="samsung_edge_panel_enabled">جهازك يدعم سامسونج إيدج، ابحث عنه في قائمة برامج سامسونج إيدج</string>
+    <string name="samsung_edge_panel_disabled">جهازك لا يدعم سامسونج إيدج</string>
+    <string name="prayers_updated_successfully">تم تحديث مواقيت الصلاة</string>
+    <string name="permissions_disabled">أذونات الموقع ملغاه</string>
+    <string name="no_location_set">لا يوجد موقع محدد</string>
+    <string name="permissions_disabled_string">برجاء السماح لاذونات الموقع حتى نتمكن من إعطاءك أفضل وأدق مواقيت للصلاة</string>
+    <string name="go_to_settings">إذهب إلى إعدادات التطبيق</string>
 </resources>

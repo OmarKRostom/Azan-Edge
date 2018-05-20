@@ -9,7 +9,7 @@
     <string name="twenty_four_hr">24 HR</string>
     <string name="method_updated_successfully">Method updated successfully !</string>
     <string name="made_by_omar_rostom">Made by Omar Khairy Rostom</string>
-    <string name="version_number">v1.1</string>
+    <string name="version_number">v2.1.3</string>
     <string name="please_allow_location">Please allow location from settings !</string>
     <string name="location_updated_successfully">Location updated successfully !</string>
     <string name="current_location">Current location</string>
@@ -22,7 +22,7 @@
     <string name="zuhr_prayer">Zuhr</string>
     <string name="maghreb_prayer">Maghrib</string>
     <string name="isha_prayer">Isha</string>
-    
+
     <!-- Azan methods -->
     <string name="method_1">University of Islamic Sciences, Karachi</string>
     <string name="method_2">Islamic Society of North America</string>
@@ -36,4 +36,23 @@
     <string name="method_10">Majlis Ugama Islam Singapura, Singapore</string>
     <string name="method_11">Union Organization islamic de France</string>
     <string name="method_12">Diyanet İşleri Başkanlığı, Turkey</string>
+
+    <string name="save">Save</string>
+    <string name="zuhr_manual_difference">Zuhr manual difference</string>
+    <string name="asr_manual_difference">Asr manual difference</string>
+    <string name="maghreb_manual_difference">Maghreb manual difference</string>
+    <string name="isha_manual_difference">Isha manual difference</string>
+    <string name="fajr_manual_difference">Fajr manual difference</string>
+    <string name="manual_time_adjustments">Manual time adjustments</string>
+    <string name="swipe_numbers_left_and_right_to_adjust">Swipe numbers left and right to adjust</string>
+    <string name="samsung_edge_panel_support">Samsung edge panel support</string>
+    <string name="samsung_edge_panel_message">Click here to check if your device is compatible with samsung panel</string>
+    <string name="samsung_edge_panel_enabled">Samsung edge panel is supported, find azan edge in edge panel settings.</string>
+    <string name="samsung_edge_panel_disabled">Samsung edge panel is not supported</string>
+    <string name="prayers_updated_successfully">Prayers updated successfully</string>
+    <string name="permissions_disabled">Location permission disabled</string>
+    <string name="no_location_set">No location set</string>
+    <string name="permissions_disabled_string">Please enable location settings in order to get accurate prayer times.</string>
+    <string name="go_to_settings">Go to app settings</string>
+
 </resources>
