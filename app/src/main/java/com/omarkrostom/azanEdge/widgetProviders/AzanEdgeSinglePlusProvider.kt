@@ -1,18 +1,15 @@
-package com.omarkrostom.azanEdge.broadcastReceivers
+package com.omarkrostom.azanEdge.widgetProviders
 
 import android.content.ComponentName
 import android.content.Context
 import android.content.SharedPreferences
-import android.os.Handler
 import android.preference.PreferenceManager
 import android.util.Log
 import android.view.View
 import android.widget.RemoteViews
-import android.widget.Toast
-import com.omarkrostom.azanEdge.Config
 import com.omarkrostom.azanEdge.Constants
 import com.omarkrostom.azanEdge.R
-import com.omarkrostom.azanEdge.networking.PrayersApiManager
+import com.omarkrostom.azanEdge.networking.networkManagers.PrayersApiManager
 import com.omarkrostom.azanEdge.networking.models.PrayerResponse
 import com.omarkrostom.azanEdge.utils.get
 import com.omarkrostom.azanEdge.utils.set
@@ -20,14 +17,11 @@ import com.omarkrostom.azanEdge.utils.setPrayerTimes
 import com.samsung.android.sdk.look.cocktailbar.SlookCocktailManager
 import com.samsung.android.sdk.look.cocktailbar.SlookCocktailProvider
 
-class EdgeSinglePlusProvider : SlookCocktailProvider(), PrayersApiManager.OnPrayerTimesApiListener {
+class AzanEdgeSinglePlusProvider : SlookCocktailProvider(), PrayersApiManager.OnPrayerTimesApiListener {
 
     private lateinit var mCocktailIds: IntArray
-    private lateinit var mDailyRunnable: Runnable
     private lateinit var mContext: Context
     private lateinit var mPreferenceManager: SharedPreferences
-
-    private val mHandler = Handler()
 
     override fun onUpdate(context: Context, cocktailManager: SlookCocktailManager, cocktailIds: IntArray?) {
         /* Update context instance */
@@ -36,17 +30,14 @@ class EdgeSinglePlusProvider : SlookCocktailProvider(), PrayersApiManager.OnPray
         /* Initialize PreferencesManager */
         mPreferenceManager = PreferenceManager.getDefaultSharedPreferences(mContext)
 
-        /* Schedule daily update task */
-        schedulePrayerTimesUpdateTask()
-
         /* Set MainPlusLayout */
         setMainPlusLayout(mContext, cocktailManager, cocktailIds)
+
+        /* UpdatePrayerTimes */
+        getPrayerTimesFromApi(mPreferenceManager)
     }
 
-    override fun onDisabled(context: Context?) {
-        /* Stop scheduling prayer updates */
-        mHandler.removeCallbacks(mDailyRunnable)
-    }
+    override fun onDisabled(context: Context?) {}
 
     override fun onSuccess(prayerResponse: PrayerResponse) {
         /* Save response to preferences */
@@ -63,36 +54,23 @@ class EdgeSinglePlusProvider : SlookCocktailProvider(), PrayersApiManager.OnPray
         Log.d("Something went wrong: ", error)
     }
 
-    private fun schedulePrayerTimesUpdateTask() {
-        mDailyRunnable = Runnable {
-            schedulePrayerTask()
-            mHandler.postDelayed(mDailyRunnable, Config.PRAYER_UPDATE_INTERVAL)
-        }
-
-        mHandler.post(mDailyRunnable)
-    }
-
-    private fun schedulePrayerTask() {
-        PrayersApiManager.getPrayerTimesFromApi(
-                mPreferenceManager.get(Constants.APP_COUNTRY, Constants.DEFAULT_COUNTRY).toString(),
-                mPreferenceManager.get(Constants.APP_CITY, Constants.DEFAULT_CITY).toString(),
-                ((mPreferenceManager.get(Constants.AZAN_METHOD_INDEX, Constants.DEFAULT_METHOD_INDEX) as Int) + 1).toString(),
-                this::onSuccess,
-                this::onError
-        )
-    }
-
     private fun updateWidget() {
         mCocktailIds = SlookCocktailManager.getInstance(mContext).getCocktailIds(
-                ComponentName(mContext, EdgeSinglePlusProvider::class.java)
+                ComponentName(mContext, AzanEdgeSinglePlusProvider::class.java)
         )
 
-        setPrayerTimes(mContext.packageName, mCocktailIds, mContext)
+        if (mCocktailIds.isNotEmpty()) {
+            setPrayerTimes(mContext.packageName,
+                    mCocktailIds,
+                    R.layout.layout_main_vertical,
+                    mContext,
+                    true)
+        }
     }
 
     /* Enables main layout */
     private fun setMainPlusLayout(context: Context, manager: SlookCocktailManager, cocktailIds: IntArray?) {
-        val layoutId = R.layout.layout_main
+        val layoutId = R.layout.layout_main_vertical
         val rv = RemoteViews(context.packageName, layoutId)
         rv.setViewVisibility(R.id.ll_main_app, View.VISIBLE)
         updateCocktails(
@@ -100,7 +78,11 @@ class EdgeSinglePlusProvider : SlookCocktailProvider(), PrayersApiManager.OnPray
                 manager,
                 rv
         )
-        setPrayerTimes(context.packageName, cocktailIds!!, context)
+        setPrayerTimes(mContext.packageName,
+                cocktailIds!!,
+                R.layout.layout_main_vertical,
+                context,
+                true)
     }
 
     /* Needed to update view */
@@ -112,6 +94,17 @@ class EdgeSinglePlusProvider : SlookCocktailProvider(), PrayersApiManager.OnPray
                 manager.updateCocktail(id, rv)
             }
         }
+    }
+
+    /* Needed to retreive prayer times */
+    private fun getPrayerTimesFromApi(sharedPreferences: SharedPreferences = mPreferenceManager) {
+        PrayersApiManager.getPrayerTimesFromApi(
+                sharedPreferences.get(Constants.APP_LAT, Constants.DEFAULT_LAT).toString(),
+                sharedPreferences.get(Constants.APP_LONG, Constants.DEFAULT_LONG).toString(),
+                ((sharedPreferences.get(Constants.AZAN_METHOD_INDEX, Constants.DEFAULT_METHOD_INDEX) as Int) + 1).toString(),
+                this::onSuccess,
+                this::onError
+        )
     }
 
 }
