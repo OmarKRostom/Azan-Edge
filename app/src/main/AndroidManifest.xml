@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.omarkrostom.azanEdge">
 
@@ -5,8 +6,10 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name=".AzanEdgeApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_azan_edge_icon"
         android:label="@string/app_title"
@@ -16,17 +19,39 @@
 
         <!-- Activities -->
         <activity
-            android:name="com.omarkrostom.azanEdge.activities.SettingsActivity"
+            android:name=".activities.SettingsActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".activities.ManualTimesActivity"
             android:screenOrientation="portrait" />
 
         <!-- Broadcast Receivers -->
-        <receiver android:name="com.omarkrostom.azanEdge.broadcastReceivers.EdgeSinglePlusProvider">
+        <receiver android:name=".widgetProviders.AzanEdgeSinglePlusProvider">
             <intent-filter>
                 <action android:name="com.samsung.android.cocktail.v2.action.COCKTAIL_UPDATE" />
             </intent-filter>
+
             <meta-data
                 android:name="com.samsung.android.cocktail.provider"
-                android:resource="@xml/edge_single_plus" />
+                android:resource="@xml/azan_edge_single_plus" />
+        </receiver>
+
+        <receiver android:name=".widgetProviders.AzanEdgeHorizontalProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/azan_edge_horizontal" />
         </receiver>
 
         <!-- Meta Data -->
@@ -34,5 +59,10 @@
             android:name="com.samsung.android.cocktail.mode"
             android:value="edge_single_plus" />
 
+        <meta-data
+            android:name="com.bugsnag.android.API_KEY"
+            android:value="16546c98efa2ab8d7311a6853cb6f274" />
+
     </application>
+
 </manifest>
