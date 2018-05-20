@@ -6,18 +6,7 @@
 <p>Azan edge is an awesome utility used to show prayer times daily, in an elegant sleek way. Specially made for samsung edge single plus panel.</p>
 
 <h2>Compatible devices</h2>
-<ul>
-  <li>S6</li>
-  <li>S6+</li>
-  <li>S7</li>
-  <li>S7+</li>
-  <li>S8</li>
-  <li>S8+</li>
-  <li>S9</li>
-  <li>S9+</li>
-  <li>Note 5</li>
-  <li>Note 8</li>
-</ul>
+<center><p>Android 4.4+</p></center>
 
 <h2>Features</h2>
 <ul>
@@ -25,8 +14,9 @@
   <li>Quick location detection</li>
   <li>12H or 24H time format</li>
   <li>Elegant transparent UI</li>
+  <li>Awesome UI widgets for all android devices</li>
+  <li>Hijri Calendar</li>
   <li>Time prayer notifications (Coming soon)</li>
-  <li>Launcher widgets for all android devices (Coming soon)</li>
 </ul>
 
 <h2>Screenshots</h2>
@@ -48,10 +38,3 @@
     <img width="200" height="75" src="http://www.elmoreapps.com/wp-content/uploads/2013/04/GooglePlay.png" />
   </a>
 </p>
-
-<h2>Hall of fame</h2>
-<ul>
-  <li>Hazem Hagrass</li>
-  <li>Ramy Tamer</li>
-  <li>Ahmed Emad</li>
-</ul>
