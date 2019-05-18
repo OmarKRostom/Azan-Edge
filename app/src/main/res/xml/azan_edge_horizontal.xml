@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
-    android:configure="com.omarkrostom.azanEdge.activities.SettingsActivity"
+    android:configure="com.omarkrostom.azanEdge.oldApp.activities.SettingsActivity"
     android:initialLayout="@layout/layout_main_horizontal"
     android:minHeight="40dp"
     android:minWidth="250dp"

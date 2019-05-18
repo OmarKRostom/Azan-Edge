@@ -5,5 +5,5 @@
     description="@string/app_description"
     cocktailWidth="550"
     updatePeriodMills="3600000"
-    configure="com.omarkrostom.azanEdge.activities.SettingsActivity">
+    configure="com.omarkrostom.azanEdge.oldApp.activities.SettingsActivity">
 </cocktail-provider>

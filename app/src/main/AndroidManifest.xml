@@ -9,7 +9,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".AzanEdgeApplication"
+        android:name=".oldApp.AzanEdgeApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_azan_edge_icon"
         android:label="@string/app_title"
@@ -19,7 +19,7 @@
 
         <!-- Activities -->
         <activity
-            android:name=".activities.SettingsActivity"
+            android:name=".oldApp.activities.SettingsActivity"
             android:screenOrientation="portrait">
 
             <intent-filter>
@@ -30,11 +30,11 @@
         </activity>
 
         <activity
-            android:name=".activities.ManualTimesActivity"
+            android:name=".oldApp.activities.ManualTimesActivity"
             android:screenOrientation="portrait" />
 
         <!-- Broadcast Receivers -->
-        <receiver android:name=".widgetProviders.AzanEdgeSinglePlusProvider">
+        <receiver android:name=".oldApp.widgetProviders.AzanEdgeSinglePlusProvider">
             <intent-filter>
                 <action android:name="com.samsung.android.cocktail.v2.action.COCKTAIL_UPDATE" />
             </intent-filter>
@@ -44,7 +44,7 @@
                 android:resource="@xml/azan_edge_single_plus" />
         </receiver>
 
-        <receiver android:name=".widgetProviders.AzanEdgeHorizontalProvider">
+        <receiver android:name=".oldApp.widgetProviders.AzanEdgeHorizontalProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
